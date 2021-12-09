@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
     <style>
         h1,h2,h3{
             font-family: sans-serif;
@@ -89,6 +89,23 @@
     color: black !important;
     font-weight: 500 !important;
         }
+        .feature-box{
+            height:150px;
+            max-height: 200px;
+            width: 150px;
+            min-width: 150px;
+            border-radius: 50%;
+            background-color: white;
+            margin:0px 20px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        .feature-box-center{
+            position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+        }
     </style>
 </head>
 
@@ -161,13 +178,41 @@
                 
             </div>
         </div>
+       
     </div>
-
+    <hr class="uk-divider-icon">
+    <div class="uk-section">
+        <div class="uk-container">
+            <h3 style="text-align: center;">Features</h3><br/>
+            <div class="uk-child-width-1-5@m uk-child-width-1-3@s uk-grid-match" uk-scrollspy="cls: uk-animation-fade; target: > div; delay: 300; repeat: false" style="justify-content: center;padding-left: 0px;" uk-grid>
+                <div class="feature-box" uk-scrollspy-class="uk-animation-slide-bottom" style="padding:0px;position: relative;">
+                   <p class="feature-box-center">Strong Built</p>
+                </div>
+                <div class="feature-box" uk-scrollspy-class="uk-animation-slide-bottom" style="padding:0px;position: relative;">
+                    <p class="feature-box-center">Vivid colors</p>
+                </div>
+                <div class="feature-box" uk-scrollspy-class="uk-animation-slide-bottom" style="padding:0px;position: relative;">
+                    <p class="feature-box-center">Unmatched Design</p>
+                </div>
+                <div class="feature-box" uk-scrollspy-class="uk-animation-slide-bottom" style="padding:0px;position: relative;">
+                    <p class="feature-box-center">Extreme weather proof</p>
+                </div>
+                <div class="feature-box" uk-scrollspy-class="uk-animation-slide-bottom" style="padding:0px;position: relative;">
+                    <p class="feature-box-center">Fire Resistance</p>
+                </div>
+                <div class="feature-box" uk-scrollspy-class="uk-animation-slide-bottom" style="padding:0px;position: relative;">
+                    <p class="feature-box-center">Sound Proof</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="uk-divider-icon">
     <div class="uk-section">
         <div class="uk-container">
             <div class="uk-child-width-1-2@m uk-grid-divider" uk-grid>
                 <div>
-                    <h3 style="text-align: center;">Colors</h3><br />
+                    <h3 style="text-align: center;">Colors</h3>
+                    <p style="text-align: center;font-size: 12px;">We offer you wide spectrum of colors.</p>
                     <div class="uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-match" uk-grid>
                         <div>
                             <img src="http://apollosteelproducts.com/images/galavalume.png">
@@ -190,22 +235,31 @@
                             <p style="text-align: center;margin-top:10px;font-size: 12px;">Light Blue</p>
                         </div>
                     </div>
+                    
+
+                    <div>
+                        <h3 style="text-align: center;">Textures</h3>
+                           <p style="text-align: center;font-size: 12px;">Different textures in all available colors.</p>
+                           <div class="uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-match" uk-grid>
+                               <div>
+                                   <img src="http://apollosteelproducts.com/images/texture_2.png">
+                               </div>
+                               <div>
+                                   <img src="http://apollosteelproducts.com/images/texture_1.png">
+                               </div>
+                               <div>
+                                   <img src="http://apollosteelproducts.com/images/texture_3.png">
+                               </div>
+                           </div>
+                   </div>
+                   <p style="font-size: 12px;">You can also customize color on demand.</p>
                 </div>
                 <div>
-                    <h3 style="text-align: center;">Textures</h3><br />
-                    <div class="uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s uk-grid-match" uk-grid>
-                        <div>
-                            <img src="http://apollosteelproducts.com/images/texture_2.png">
-                        </div>
-                        <div>
-                            <img src="http://apollosteelproducts.com/images/texture_1.png">
-                        </div>
-                        <div>
-                            <img src="http://apollosteelproducts.com/images/texture_3.png">
-                        </div>
-                    </div>
+                    <img src="http://apollosteelproducts.com/images/shades.jpg">
+                   
                 </div>
             </div>
+            
         </div>
     </div>
     <!-- <div class="uk-section">
@@ -216,7 +270,54 @@
             <hr class="uk-divider-icon">
         </div>
     </div> -->
+    
+    <hr class="uk-divider-icon">
+    <div class="uk-section">
+        <div class="uk-container">
+            <h3 style="text-align: center;">Designs</h3>
 
+            <div class="uk-child-width-1-3@m uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="http://apollosteelproducts.com/images/curve.png" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Crimping</h3>
+                            <p>We can perform crimping process to curve sheet as per requirement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="http://apollosteelproducts.com/images/ridge.png" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Ridges</h3>
+                            <p>Ridges of customized length is manufactured.</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="http://apollosteelproducts.com/images/ushape-gutter-new.png" alt="">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">U-Shape Gutters</h3>
+                            <p>Gutters of customized dimmension is manufactured.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
     <div class="uk-section footer">
         <div class="uk-container">
             <div class="uk-child-width-1-4@m" uk-grid>
